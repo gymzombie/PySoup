@@ -16,7 +16,7 @@ authtoken = "YYYYYYYYYYYYYYYYYY"
 #
 # The output should be in a format that twilio can read or you will get application errors.
 
-twilioXMLPayload = "https://raw.githubusercontent.com/gymzombie/PySoup/master/scam.twiml"
+twilioXMLPayload = "https://pastebin.com/raw/zPfjyevb"
 
 
 # Target Phone Number(s)
@@ -30,6 +30,8 @@ targetnum = "+15555551234"
 # The setting here is the default "Test" number provided by Twilio. If you do not modify this in settings.local,
 # No charge will be placed, and you won't be successful with your calls.
 #
+# Best solution is to get multiple numbers (see getnumber.py) and list those here like this:
+# fromnumber = "+17145557236", "+14085558507", "+12125559283"
 
 fromnumber = "+15005550006"
 
