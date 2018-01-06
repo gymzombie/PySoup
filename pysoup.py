@@ -2,8 +2,10 @@
 
 from twilio.rest import Client
 # reference: https://github.com/twilio/twilio-python/
-import settings.default
-import settings.local
+
+# Import configuration settings
+execfile("./settings.default")
+execfile("./settings.local")
 
 
 # Check initialization:
@@ -23,7 +25,9 @@ def makecalls():
             # Ask the user for a phone number to target:
         # target = input('Enter the target number to start flood (+1 MUST BE IN FRONT!):')
 
-        new_call = client.calls.create(to=targetnum, from_='YYYY', url=twilioXMLPayload)
+        fromnumber = 8047290441
+        new_call = Client.calls.create(to=targetnum, from_=fromnumber, url=twilioXMLPayload)
+
         print('Started call to :" + targetnum + " from: " + FromNumber')
         # TODO: Catch errors from bad numbers here
 
