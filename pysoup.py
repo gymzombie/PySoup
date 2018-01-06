@@ -31,6 +31,11 @@ def makecalls():
 
         # TODO: Catch errors from bad numbers here
 
+
+# TODO: Separate function for looping the calls
+
+# TODO: Get unique new phone numbers
+
 if __name__ == '__main__':
     makecalls()
 
