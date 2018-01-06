@@ -8,6 +8,7 @@
 accountSid = "ACXXXXXXXXXXXXXXXXX"
 authtoken = "YYYYYYYYYYYYYYYYYY"
 
+
 # Provide link to your twiml-formatted URL.
 #  This url defines what the listener will hear if they pick up the phone
 #
@@ -18,12 +19,9 @@ authtoken = "YYYYYYYYYYYYYYYYYY"
 twilioXMLPayload = "https://raw.githubusercontent.com/gymzombie/PySoup/master/scam.twiml"
 
 
-
 # Target Phone Number(s)
 #
 # Note that this MUST start with +1
 
 targetnum = "+15555551234"
-
-
 

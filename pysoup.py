@@ -7,11 +7,13 @@ from twilio.rest import Client
 execfile("./settings.default")
 execfile("./settings.local")
 
+# Python3 version:
+# exec(open("./settings.local").read())
 
-# Check initialization:
+# TODO: Check initialization:
 #  * Not using default twilio account
 #  * a target has been provided
-#      * TODO: Regex to verify correct format?
+#      * Regex to verify correct format?
 #      * Optional: If one has not been provided in the settings, ask the user for input?
 #      * Optional: If any of the settings are set to defaults, kick the user out with instructions
 #  * We have a message to send
@@ -19,7 +21,6 @@ execfile("./settings.local")
 
 
 def makecalls():
-    while True:
 
         # Use the target provided in the settings file, else ask the user to provide one:
             # Ask the user for a phone number to target:
