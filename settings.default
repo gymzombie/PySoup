@@ -20,8 +20,10 @@ twilioXMLPayload = "https://raw.githubusercontent.com/gymzombie/PySoup/master/sc
 
 
 # Target Phone Number(s)
+#
+# Note that this MUST start with +1
 
-
+targetnum = "+15555551234"
 
 
 
