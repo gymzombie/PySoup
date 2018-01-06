@@ -21,10 +21,13 @@ def makecalls():
 
         # Use the target provided in the settings file, else ask the user to provide one:
             # Ask the user for a phone number to target:
-        target = input('Enter the target number to start flood (+1 MUST BE IN FRONT!):')
+        # target = input('Enter the target number to start flood (+1 MUST BE IN FRONT!):')
+
         new_call = client.calls.create(to=targetnum, from_='YYYY', url=twilioXMLPayload)
         print('Started call to :" + targetnum + " from: " + FromNumber')
         # TODO: Catch errors from bad numbers here
+
+
 
 if __name__ == '__main__':
     makecalls()
