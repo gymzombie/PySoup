@@ -4,11 +4,9 @@ from twilio.rest import Client
 # reference: https://github.com/twilio/twilio-python/
 
 # Import configuration settings
-execfile("./settings.default")
-execfile("./settings.local")
+exec(open("./settings.default").read())
+exec(open("./settings.local").read())
 
-# Python3 version:
-# exec(open("./settings.local").read())
 
 # TODO: Check initialization:
 #  * Not using default twilio account
@@ -19,20 +17,20 @@ execfile("./settings.local")
 #  * We have a message to send
 
 
-
 def makecalls():
 
         # Use the target provided in the settings file, else ask the user to provide one:
             # Ask the user for a phone number to target:
         # target = input('Enter the target number to start flood (+1 MUST BE IN FRONT!):')
 
-        fromnumber = 8047290441
-        new_call = Client.calls.create(to=targetnum, from_=fromnumber, url=twilioXMLPayload)
+        client = Client(accountSid, authtoken)
 
-        print('Started call to :" + targetnum + " from: " + FromNumber')
+        new_call = client.calls.create(to=targetnum, from_=fromnumber, url=twilioXMLPayload)
+
+        print('Started call to :' + targetnum + ' from: ' + fromnumber)
+
         # TODO: Catch errors from bad numbers here
-
-
 
 if __name__ == '__main__':
     makecalls()
+
