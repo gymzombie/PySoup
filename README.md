@@ -21,7 +21,7 @@ You are welcome to fork and make changes, but don't run this unless you know som
 * Sign up with Twilio: https://www.twilio.com/try-twilio
 * Make sure your system has python modules to support Twilio: `pip install twilio`
 
-###Installation
+##Installation
 
 `$ git clone https://github.com/Jfaler/soup`
 
