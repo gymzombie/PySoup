@@ -25,3 +25,11 @@ twilioXMLPayload = "https://raw.githubusercontent.com/gymzombie/PySoup/master/sc
 
 targetnum = "+15555551234"
 
+# From Number
+#
+# The setting here is the default "Test" number provided by Twilio. If you do not modify this in settings.local,
+# No charge will be placed, and you won't be successful with your calls.
+#
+
+fromnumber = "+15005550006"
+
