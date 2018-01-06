@@ -4,31 +4,29 @@ source call flooder using Twilio API.
 
 
 Description
-This type of attack is reffered to as a TDoS or Telephony Denial of Service attack.
-
-## Scenarios
-* Distributed stress testing
-* Live testing
-  - Prove the new system is stable and find bugs that only occur in the real world
-* Regression testing
-* Performance comparison
+This type of attack is referred to as a TDoS or Telephony Denial of Service attack.
+Please verify the legality of using this type of tool
 
 
 ## Version
 `
 0.0.0.1a
 `
+
+This is pre-beta. At the moment I don't recommend running it, as I haven't even done a dry-run. 
+You are welcome to fork and make changes, but don't run this unless you know some python and can help me catch errors. :-)
+
 ## Prerequisites
 
-* Sign up https://www.twilio.com/try-twilioPrerequisites
-Sign up https://www.twilio.com/try-twilio
+* Sign up with Twilio: https://www.twilio.com/try-twilio
+* Make sure your system has python modules to support Twilio: `pip install twilio`
 
-* `pip install twilio`
+###Installation
 
-Installation
-$ git clone https://github.com/Jfaler/soup
+`$ git clone https://github.com/Jfaler/soup`
 
 ## TODO
 
-1. Python & Nodejs implementation
-2. Tutorial
+1. Get working
+2. Test
+3. Error checking

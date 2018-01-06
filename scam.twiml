@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="man">Hello, It has been determined that you are a scam. Because of this we are flooding your phone lines to
+    prevent you from scamming additional people. This will not stop, until you stop.</Say>
+    <Record maxLength="20" />
+</Response>
