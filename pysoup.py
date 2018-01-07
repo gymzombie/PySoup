@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# See Readme.md for details and instructions
+
 from twilio.rest import Client
 # reference: https://github.com/twilio/twilio-python/
 
@@ -8,13 +10,19 @@ exec(open("./settings.default").read())
 exec(open("./settings.local").read())
 
 
-# TODO: Check initialization:
-#  * Not using default twilio account
-#  * a target has been provided
-#      * Regex to verify correct format?
-#      * Optional: If one has not been provided in the settings, ask the user for input?
-#      * Optional: If any of the settings are set to defaults, kick the user out with instructions
-#  * We have a message to send
+def verify():
+    if accountSid == "ACXXXXXXXXXXXXXXXXX"
+        print("Your settings.local file has not been created, or has not been modified to reflect your account SID.")
+        exit()
+    if authtoken == "YYYYYYYYYYYYYYYYYY"
+        print("Your settings.local file has not been created, or has not been modified to reflect your authtoken.")
+        exit()
+    if targetnum == "+15555551234"
+        print('Please update your settings.local file with a correct target number')
+        exit()
+    if targetnum != \+1[2-9](\d{1,9})
+        print('Please update your settings.local file with a target number formatted as +12024561212')
+        exit()
 
 
 def makecall():
@@ -30,7 +38,9 @@ def makecall():
 
 # TODO: Separate function for looping the calls
 
-# TODO: Get unique new phone numbers
+
+
+verify()
 
 if __name__ == '__main__':
     makecall()
